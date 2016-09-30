@@ -1,3 +1,57 @@
+2016/09/04
+修正了会导致chrome崩溃的问题
+添加了GammaValueDW参数用于dw模式下的gamma值，范围与gammavalue相同，不设此值时自动计算。
+
+The crash bug related to chrome has been solved.
+added a new param: GammaValueDW, only used in DW tweak. If left unset, it behaviors the same as previous release.
+
+2016/09/02
+修正了会导致windows卡在启动界面很久的问题
+修正了clipboxfix参数无效的问题
+
+fixed the problem that will cause windows stucking for a very long time during boot.
+fixed a problem that prevent clipboxfix from taking effect
+
+2016/09/01
+修正了Windows7下可能导致无法启动的问题
+修正了edge会很卡的问题
+允许使用[experimental@exename.exe] clipboxfix=0的方式来禁用斩脚优化。
+
+fixed a serious bug that causes windows7 stuck at boot
+fixed a issue that causes edge to crash and lag
+allow you to disable clipbox fix by add [experimental@exename.exe] clipboxfix=0 to your profile.
+
+2016/08/27
+重大更新版本，推荐升级
+Windows 8/8.1/10 兼容
+重新启用对DirectWrite的优化配置支持（感谢silight-jp的研究，请访问他的网站给予支持：http://silight.hatenablog.jp/entry/MacTypePatch）
+请使用DirectWrite=1来启用此功能。此功能无参数可配置，优化参数根据其他参数而自动给出。
+升级FreeType到2.6.5，注意此版本的渲染效果和旧版有所不同。
+Tuner和Tray支持HiDPI
+向导的缩略图列表支持文件夹
+向导多语言切换优化
+修正Chrome会缺字或者渲染混乱的问题
+支持Metro程序渲染加载，各模式均可（请务必安装到Program Files文件夹并选中安装到系统文件夹，否则无效）
+修正firefox等程序中纵排文字重叠的问题，同样感谢silight-jp提供的问题解决思路
+解决部分程序中文字斩脚的问题，再次感谢silight-jp的优秀代码
+解决了Windows8/8.1/10下加载到挂起程序会卡住很久的问题
+Tray现在可以识别最新的系统版本了
+
+2016/08/27
+Major update, all users are recommended to upgrade.
+Windows 8/8.1/10 ready
+Directwrite tweak re-enabled. (Great thanks to silight-jp, please visit: http://silight.hatenablog.jp/entry/MacTypePatch and give him a thumb up)
+** Enable this tweak by adding DirectWrite=1 to general section. No other parameter available.
+Upgraded freetype to 2.6.5, note that this version brings to you a different rendering result.
+HiDPI ready for MacTuner and MacTray
+Folder support for mactype wizard in profile thumbnail view.
+Multi-lang switch effect optimized.
+Chrome compatibility improved, no letter missing or rendering chaos anymore (I hope).
+Injecting to metro is possible in all loading modes. (Mactype has to be install to program files folder and installing to system folder option should be checked).
+Vertical layout in firefox and some other programs has been fixed (Special thanks to silight-jp)
+Clipbox parameter is no longer required, it has been fixed for all programs. (thanks to silight-jp again, you are such a great developer)
+Mactray can identify more os versions now.
+
 2013/12/31
 这是一个维护版本，修正了部分已知bug
 Win8下字体替换不生效的bug

@@ -1,22 +1,14 @@
 ;aiu;
-
 [Update]
-Name=MacType 1.2013.1231.0
-ProductVersion=1.13.1231.0
-UpdatedApplicationVersions<1.13.1231
-UpdatedApplications=MacType[1.0-1.13.1231)
-URL=http://www.mactype.tk/MacTypeInstaller_2013_1231_0.exe
-Size=4944219
-ReleaseDate=31/12/2013
-MD5=c875f417353682239827ab660f31f379
-ServerFileName=MacTypeInstaller_2013_1231_0.exe
-Flags=Critical|NoCache
-FilePath=[APPDIR]MacType.dll
-Version=1.2013.1231.0
-Description=MacType 1.2013.1231.0 Released
-BugFix=This is a maintainess release. It fixes known bugs include:
-BugFix1=Font substitution didn't work under win8/win8.1
-BugFix2=Text with space in between not get rendered properly
-BugFix3=Font does not get their default fontlink correctly
-BugFix4=Text layout issues.
-BugFix5=and etc. (I forgot the rest .... )
+Name = MacType
+ProductVersion = 1.16.904.0
+URL = http://www.mactype.net/download.php?latest
+Size = 6125892
+ReleaseDate = 04/09/2016
+MD5 = 866d05f08b96ee862d9418a8f470eb2b
+ServerFileName = MacTypeInstaller_2016_0904_0.exe
+FilePath = [APPDIR]MacType.dll
+Version = 1.2016.904.0
+UpdatedApplications = MacType[1.0-1.16.904)
+Description = The crash bug related to chrome has been solved.
+Description1 = added a new param: GammaValueDW, only used in DW tweak. If left unset, it behaviors the same as previous release.
