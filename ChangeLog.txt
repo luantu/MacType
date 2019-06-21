@@ -1,3 +1,24 @@
+2019/06/13 (2019.1-beta6)
+- Added font inclusion (see below)
+- Improved loader (Works for Ableton and many more applications that previous would crash MacType due to a Windows 10 security enhancement)
+- Improved font identification, a better way to distinguish some malformed derived fonts
+- Update to freetype 2.10.0
+- Update to the latest easyhook version
+- Windows 8/8.1 compatibility improved
+- Windows XP/2003 compatibility improved (yes we still support 32-bit XP/2003!)
+- MacTray now has a bug report system (see below)
+- The new installer now cleans up files it was missing from the old installer (Program Files (x86)
+- MacType Updater is now working
+- MacTray.exe will now properly detect if MacType is running in Service Mode and open the Wizard instead
+- Added a new Profile thanks to @ChicoThorn. This is designed to work at 117% screen scaling
+Note 1: Font inclusion
+As requested! ?? To use the new font inclusion feature, add the font name(s) under the [Include] section and only those specified font(s) will be rendered. If a font is both "Included" and "Excluded", it will be excluded. If nothing is specified under [Include] or the section doesn't exist, font inclusion is disabled.
+Why have we added font inclusion? Well first of all because it was requested... But also if you run a complex Windows environment, whitelisting (or including) several fonts, gives you a lot more control over things than excluding potentially hundreds of fonts.
+Note 2: MacTray bug report
+This allows you to save a bug report instead of sending it currently, and gives you the info we need to help find and fix bugs more easily.
+Note 3: UWP apps
+UWP stands for Universal Windows Application. MacType works for all native UWP apps, but not for apps converted from the old Win32 applications.
+
 2018/12/05 (2018.1-beta5)
 - Includes changes from DirectWrite test version *See Note 1
 - Simpler version numbering
