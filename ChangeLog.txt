@@ -1,94 +1,31 @@
-2019/06/13 (2019.1-beta6)
-- Added font inclusion (see below)
-- Improved loader (Works for Ableton and many more applications that previous would crash MacType due to a Windows 10 security enhancement)
-- Improved font identification, a better way to distinguish some malformed derived fonts
-- Update to freetype 2.10.0
-- Update to the latest easyhook version
-- Windows 8/8.1 compatibility improved
-- Windows XP/2003 compatibility improved (yes we still support 32-bit XP/2003!)
-- MacTray now has a bug report system (see below)
-- The new installer now cleans up files it was missing from the old installer (Program Files (x86)
-- MacType Updater is now working
-- MacTray.exe will now properly detect if MacType is running in Service Mode and open the Wizard instead
-- Added a new Profile thanks to @ChicoThorn. This is designed to work at 117% screen scaling
-Note 1: Font inclusion
-As requested! ?? To use the new font inclusion feature, add the font name(s) under the [Include] section and only those specified font(s) will be rendered. If a font is both "Included" and "Excluded", it will be excluded. If nothing is specified under [Include] or the section doesn't exist, font inclusion is disabled.
-Why have we added font inclusion? Well first of all because it was requested... But also if you run a complex Windows environment, whitelisting (or including) several fonts, gives you a lot more control over things than excluding potentially hundreds of fonts.
-Note 2: MacTray bug report
-This allows you to save a bug report instead of sending it currently, and gives you the info we need to help find and fix bugs more easily.
-Note 3: UWP apps
-UWP stands for Universal Windows Application. MacType works for all native UWP apps, but not for apps converted from the old Win32 applications.
+2021/5/7
+CET兼容，解决在新CPU上部分程序会崩溃的问题
+升级freetype到最新版本。
+取消对环境变量的劫持
+修正在部分情况下退出mactype会导致崩溃的问题
+修正服务模式在启动时会无法渲染部分进程的问题
+移除注册表模式
+移除全局强制字体替换功能(ForceChangeFont)
+修正win10下点阵字导致崩溃的问题
+移除xp支持
+修正一处字体替换乱码的问题（Telegram相关）
+允许排除或包括一整个文件夹（需要以\结尾）
+修正light+lcd工作不正常的问题
+优化翻译
 
-2018/12/05 (2018.1-beta5)
-- Includes changes from DirectWrite test version *See Note 1
-- Simpler version numbering
-- Unicode plane bug fixed and other painting bugs fixed
-- Will no longer crash Microsoft Edge
-- Improved detection of Registry Mode in MacTray 
-- Brings back svchost.exe hooking so that UWP in Windows 10 with service mode and tray mode is supported
-- Per-group configuration is back
-- Color fonts in Chrome are way better (very close to the real color) *See Note 2
-- Updated to the latest FreeType dev version (ver. 3dd4e76b19f3cd4f706c3455d6ae01765d07eee5)
-- New useful profiles: Clean Sharp, Clean Soft, mufunyo, and extratype
-Note 1: DirectWrite test version
-In the DirectWrite test version more DirectWrite hooking points were added, and @extratype made the code much more readable and easier to maintain (thanks @extratype). The DirectWrite changes are now included in this main beta.
-Note 2: Color Fonts
-For more info on how to use Color fonts, see https://github.com/snowie2000/mactype/wiki/ColorFont. For some reason Chrome (and Cent Browser) inverts the colors of color fonts. So we have added the InvertColor option to fix this. For more information see https://github.com/snowie2000/mactype/wiki/InvertColor
-
-2018/10/19 (1.18.10.19-beta4)
-If you experience any problems please search the [Issues](https://github.com/snowie2000/mactype/issues)
-and log a new Issue if your problem isn't listed. Thanks for your support!
-Full release notes: 
-Bug fixes/new features:
-	- Update FreeType to git commit 0c4feb72cf976f63d4bf62436bc48f190d0e0c28 (this fixes issue #446)
-	- Support color fonts (e.g. emoji fonts... see options below)
-	- Dropped support for 16bit graphics to fix issues related to the Touhou series (issue #440)
-	- Fixed compatibility with Qt WebKit (issue #195)
-	- Fixed a bug with malformed ExtTextout
-	- Updated tray app to better fit multiple screen scenarios (issue #161)
-	- Tray app can intercept explorer in service mode now
-	- A little tweak for diacritics
-	- Fixed deadlock bug in tray app
-	- Fixed environment error in tuner app
-	- Fixed translation bug in tuner app (issues #445, #444)
-	- Brand new robust installer (resolves #443)
-	- Using decimal characters (',' or '.') in ini files should work correctly (issue #358)
-New experimental feature: Color font support!
-To enable color fonts, in your ini file use the directive:
-	[experimental]
-	colorfont=1
-To make colors appear correctly in Chrome, the invertcolor flag is required:
-	[experimental]
-	invertcolor=1
-Or use per-app configure like this:
-	[experimental@chrome.exe]
-	invertcolor=1
-
-2018/10/01 beta3
-Fixed sometimes MacType didn't start, and profile had to be reapplied after a Windows restart
-Improved English translations
-New installer (testing)
-
-2018/09/17 beta2
-Updated to the latest FreeType 2.9.1
-Merged some assemblers from the latest EasyHook
-Better compatible with Windows 10 (in theory. I've never encountered any incompatibility before)
-Better process capture with WMI process capture, MacTray should now capture newly created process in less than 1s and no snapshot poll is required. So there should be no CPU use peak every 5s anymore
-Won't terminate processes if unsupported fonts with vert table are found
-Won't crash process when the specific glyph cannot be found in FreeType when Windows font linking is used
-Does not include Infinality as this is still experimental
-
-2017/06/28
-Fixed the compatible issue with Chrome, firefox and etc.
-Possible to disable hinting in Win7
-Traditional Chinese translation got improved
-Better multi-lang system
-
-2017/06/14
-All users are recommended to upgrade
-Win10 compatible
-FreeType 2.8.0 included
-Bug fixes
+Compatible with shadow stack (introduced with new CPUs), system apps on Windows 10+new CPU no longer crash because of that.
+Bump FreeType to the latest git version.
+No longer intercept application environments.
+Fixed a bug where an application could crash on mactype unloading because of some improper memory writes and assumptions.
+Fixed a bug where in service mode, some applications occasionally couldn't be rendered.
+Remove registry mode from Mactype wizard. 
+Remove the option ForceChangeFont
+Fixed a bug where an application may crash if a bitmap font is used (Windows10 only)
+Dropped support for Windows XP. (R.I.P. WinXP)
+Fixed a bug where texts could be garbled when fontsubsitutes is used. (e.g. with Telegram)
+A folder and its subfolders can now be included/excluded, it just needs to be ended with a "\"
+Fixed a bug where light+lcd didn't work as intended.
+Localization adjustment.
 
 2016/09/04
 修正了会导致chrome崩溃的问题
