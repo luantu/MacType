@@ -1,3 +1,26 @@
+2022/7/29
+修正字体独立设置不生效的问题
+VisTuner现在支持64位应用
+
+Fixed a bug where individual font settings are not effective.
+Added x64 application support to Vistunner
+Make vistuner button descriptions more descriptive.
+
+2022/7/20
+使用新的HarmonyLCD渲染模式，兼容Pentile排列的LCD（测试）
+大幅优化MacTray，服务模式可以稳定的运行，不再中途失效
+服务模式也可以自动刷新进程界面，避免渲染迟缓问题
+新的实时可视化Tuner，在真实程序中调整您的配置
+优化子进程加载，减少unloaddll中的程序出错的可能性
+
+This test version includes mactype files working in Harmony LCD rendering mode, which means we can now work with pentile LCD panels.
+Mactray.exe has been vastly improved, so that:
+- service mode now work properly
+- application UIs can be automatically refreshed when mactype is engaged.
+- wmi sink is now much more stable than before, mactype should be working flawlessly after reboot
+A new real-time tuner has been added, which allows you to tune your profiles while reflects what it looks like in real applications
+Child process hooking has been improved so that there will be fewer cases that applications listed in the unloaddll section still got loaded (and unload after) causing certain apps to crash.
+
 2021/5/7
 CET兼容，解决在新CPU上部分程序会崩溃的问题
 升级freetype到最新版本。
