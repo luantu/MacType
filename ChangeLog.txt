@@ -1,3 +1,17 @@
+2024/8/15
+修正特定情况下启动程序容易出现访问被拒绝错误的问题
+EasyHook现在静态编译
+
+Fixed a bug where an access denied error may occur when starting an app (especially for the first time after boot)
+Easyhook is not statically linked.
+
+2023/5/31
+修正DirectWrite中ID2D1Device5/6中序列号错误导致的崩溃问题#938，感谢@lhecker
+支持通过命令行和程序化方法控制mactype的启用和退出
+
+Fixed a crash that was caused by incorrect indices of ID2D1Device5 and ID2D1Device6 #938. Thanks to @lhecker
+Implemented basic external control via messaging and CLI.
+
 2022/7/29
 修正字体独立设置不生效的问题
 VisTuner现在支持64位应用
