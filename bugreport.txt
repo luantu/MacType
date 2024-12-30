@@ -1,0 +1,739 @@
+date/time          : 2024-10-21, 16:21:48, 236ms
+computer name      : R03602
+user name          : YOUNG <admin>
+operating system   : Windows 10 x64 build 22631
+system language    : Chinese (Simplified)
+system up time     : 5 minutes 34 seconds
+program up time    : 43 seconds
+processors         : 12x Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+physical memory    : 24670/32514 MB (free/total)
+free disk space    : (C:) 58.41 GB (D:) 59.17 GB
+display mode       : 2560x1440, 32 bit
+process id         : $838
+allocated memory   : 269.74 MB
+largest free block : 922.60 MB
+executable         : MacTray.exe
+exec. date/time    : 2024-06-26 09:45
+version            : 1.0.2023.7
+compiled with      : Delphi XE
+madExcept version  : 5.0.0
+callstack crc      : $00000000, $e6a731e5, $36894123
+exception number   : 1
+exception class    : EAccessViolation
+exception message  : Access violation at address 00000000. Read of address 00000000.
+
+thread $1140:
+00000000 +00 ???
+00610702 +8e MacTray.exe  untMain    2957 +15 Reload
+0040704c +28 MacTray.exe  System    16524 +45 ThreadWrapper
+004788d5 +0d MacTray.exe  madExcept 17411  +6 CallThreadProcSafe
+0047893f +37 MacTray.exe  madExcept 17461  +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                     BaseThreadInitThunk
+>> created by main thread ($2ac8) at:
+00610779 +51 MacTray.exe  untMain    2980 +14 TfrmPsInfo.R1Click
+
+main thread ($2ac8):
+00577b55 +149 MacTray.exe  Forms   10373  +39 TApplication.Idle
+00576d83 +017 MacTray.exe  Forms    9790   +1 TApplication.HandleMessage
+005770a1 +0c9 MacTray.exe  Forms    9927  +26 TApplication.Run
+0057c86a +08e MacTray.exe  SvcMgr   1237  +12 TServiceApplication.Run
+0062297f +567 MacTray.exe  MacTray   183 +109 initialization
+75fc7ba7 +017 KERNEL32.DLL                    BaseThreadInitThunk
+
+thread $c20:
+75fc7ba7 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $3c38:
+75fc7ba7 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $3fb4:
+75fc7ba7 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $3260:
+75fc7ba7 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $476c:
+75fc7ba7 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $33c4:
+75c24d89 +189 KERNELBASE.dll                    WaitForMultipleObjectsEx
+004788d5 +00d MacTray.exe    madExcept 17411 +6 CallThreadProcSafe
+0047893f +037 MacTray.exe    madExcept 17461 +9 ThreadExceptFrame
+75fc7ba7 +017 KERNEL32.DLL                      BaseThreadInitThunk
+>> created by thread $4630 at:
+76c6ffae +000 combase.dll
+
+thread $260c (TASyncProcLoader):
+75c23f62 +82 KERNELBASE.dll                     WaitForSingleObjectEx
+75c23ecd +0d KERNELBASE.dll                     WaitForSingleObject
+006123d9 +4d MacTray.exe    untMain    3666  +4 TASyncProcLoader.Execute
+004789f3 +2b MacTray.exe    madExcept 17478  +3 HookedTThreadExecute
+004befae +42 MacTray.exe    Classes   11407 +11 ThreadProc
+0040704c +28 MacTray.exe    System    16524 +45 ThreadWrapper
+004788d5 +0d MacTray.exe    madExcept 17411  +6 CallThreadProcSafe
+0047893f +37 MacTray.exe    madExcept 17461  +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                       BaseThreadInitThunk
+>> created by main thread ($2ac8) at:
+00612220 +18 MacTray.exe    untMain    3622  +1 TASyncProcLoader.Create
+
+thread $44ec (TProcEnum):
+75c23f62 +82 KERNELBASE.dll                              WaitForSingleObjectEx
+75c23ecd +0d KERNELBASE.dll                              WaitForSingleObject
+005b16aa +3e MacTray.exe    uProcessEnumerator    63 +10 TProcEnum.Execute
+004789f3 +2b MacTray.exe    madExcept          17478  +3 HookedTThreadExecute
+004befae +42 MacTray.exe    Classes            11407 +11 ThreadProc
+0040704c +28 MacTray.exe    System             16524 +45 ThreadWrapper
+004788d5 +0d MacTray.exe    madExcept          17411  +6 CallThreadProcSafe
+0047893f +37 MacTray.exe    madExcept          17461  +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                                BaseThreadInitThunk
+>> created by main thread ($2ac8) at:
+005b15c0 +18 MacTray.exe    uProcessEnumerator    33  +1 TProcEnum.Create
+
+thread $3b38 (TAgentSpawner):
+75c24d89 +189 KERNELBASE.dll                     WaitForMultipleObjectsEx
+75c24be3 +013 KERNELBASE.dll                     WaitForMultipleObjects
+005b122a +0d6 MacTray.exe    uX64Proxy    68 +15 TAgentSpawner.Execute
+004789f3 +02b MacTray.exe    madExcept 17478  +3 HookedTThreadExecute
+004befae +042 MacTray.exe    Classes   11407 +11 ThreadProc
+0040704c +028 MacTray.exe    System    16524 +45 ThreadWrapper
+004788d5 +00d MacTray.exe    madExcept 17411  +6 CallThreadProcSafe
+0047893f +037 MacTray.exe    madExcept 17461  +9 ThreadExceptFrame
+75fc7ba7 +017 KERNEL32.DLL                       BaseThreadInitThunk
+>> created by main thread ($2ac8) at:
+005b10df +01b MacTray.exe    uX64Proxy    34  +1 TAgentSpawner.Create
+
+thread $3f48:
+75c23f62 +82 KERNELBASE.dll                    WaitForSingleObjectEx
+75c23ecd +0d KERNELBASE.dll                    WaitForSingleObject
+004788d5 +0d MacTray.exe    madExcept 17411 +6 CallThreadProcSafe
+0047893f +37 MacTray.exe    madExcept 17461 +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                      BaseThreadInitThunk
+>> created by thread $2c6c at:
+105cbf6e +00 SogouPY.ime
+
+thread $2d8c:
+77290c44 +e4 ntdll.dll                         RtlDelayExecution
+75c06729 +49 KERNELBASE.dll                    SleepEx
+75c066ca +0a KERNELBASE.dll                    Sleep
+004788d5 +0d MacTray.exe    madExcept 17411 +6 CallThreadProcSafe
+0047893f +37 MacTray.exe    madExcept 17461 +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                      BaseThreadInitThunk
+>> created by thread $2c6c at:
+105cbf6e +00 SogouPY.ime
+
+thread $2dac:
+75cf7484 +24 KERNELBASE.dll                    GetQueuedCompletionStatus
+004788d5 +0d MacTray.exe    madExcept 17411 +6 CallThreadProcSafe
+0047893f +37 MacTray.exe    madExcept 17461 +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                      BaseThreadInitThunk
+>> created by thread $3f48 at:
+105cbf6e +00 SogouPY.ime
+
+thread $2da0:
+77002aec +4c user32.dll                          MsgWaitForMultipleObjectsEx
+004788d5 +0d MacTray.exe      madExcept 17411 +6 CallThreadProcSafe
+0047893f +37 MacTray.exe      madExcept 17461 +9 ThreadExceptFrame
+75fc7ba7 +17 KERNEL32.DLL                        BaseThreadInitThunk
+>> created by thread $2d98 at:
+5471337c +00 ichat_bundle.dll
+
+modules:
+00400000 MacTray.exe                       1.0.2023.7          D:\Program Files (x86)\MacType
+0b330000 Resource.dll                      14.9.0.9966         D:\Program Files (x86)\SogouInput\14.9.0.9966
+10000000 SogouPY.ime                       14.9.0.9966         C:\WINDOWS\system32
+51de0000 apphelp.dll                       10.0.22621.3810     C:\WINDOWS\system32
+53050000 CoreMessaging.dll                 10.0.22621.3672     C:\WINDOWS\SYSTEM32
+53c90000 OneCoreUAPCommonProxyStub.dll     10.0.22621.4249     C:\Windows\System32
+541e0000 biz_bundle.dll                    1.0.0.2591          D:\Program Files (x86)\SogouInput\Components\biz_center\1.0.0.2591
+542a0000 SGDeskControl.dll                 1.0.0.2397          D:\Program Files (x86)\SogouInput\Components\SGDeskControl\1.0.0.2397
+54350000 PicFace.dll                       1.1.0.2326          D:\Program Files (x86)\SogouInput\Components\PicFace\1.1.0.2326
+545f0000 TextShaping.dll                   10.0.22621.4317     C:\WINDOWS\SYSTEM32
+54690000 isgpet_bundle.dll                                     D:\Program Files (x86)\SogouInput\Components\isgpet\1.0.2.2521
+54700000 ichat_bundle.dll                  1.0.2.2540          D:\Program Files (x86)\SogouInput\Components\IChat\1.0.2.2540
+547c0000 game_center.dll                   1.0.0.2353          D:\Program Files (x86)\SogouInput\Components\game_center\1.0.0.2353
+54ef0000 SogouTSF.ime                      14.9.0.9966         C:\WINDOWS\System32
+66940000 CoreUIComponents.dll              10.0.22621.3672     C:\WINDOWS\SYSTEM32
+67ab0000 Bcp47Langs.dll                    10.0.22621.3672     C:\Windows\System32
+67b00000 appresolver.dll                   10.0.22621.4111     C:\Windows\System32
+67b90000 Windows.StateRepositoryPS.dll     10.0.22621.4036     C:\Windows\System32
+67bf0000 mstask.dll                        10.0.22621.1        C:\WINDOWS\System32
+67c20000 FaultRep.dll                      10.0.22621.3672     C:\WINDOWS\SYSTEM32
+68250000 textinputframework.dll            10.0.22621.4249     C:\WINDOWS\SYSTEM32
+68350000 comctl32.dll                      6.10.22621.3672     C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_6ec0f0a887fe525b
+68a50000 wsock32.dll                       10.0.22621.1        C:\WINDOWS\SYSTEM32
+69870000 Wldp.dll                          10.0.22621.4036     C:\WINDOWS\SYSTEM32
+69ba0000 cldapi.dll                        10.0.22621.2506     C:\Windows\System32
+69bd0000 edputil.dll                       10.0.22621.3527     C:\WINDOWS\SYSTEM32
+69bf0000 windows.staterepositoryclient.dll 10.0.22621.4036     C:\WINDOWS\SYSTEM32
+69c50000 DWMAPI.DLL                        10.0.22621.3672     C:\WINDOWS\SYSTEM32
+6ba60000 Windows.FileExplorer.Common.dll   10.0.22621.4249     C:\Windows\System32
+6bc60000 winsta.dll                        10.0.22621.3672     C:\WINDOWS\SYSTEM32
+6c460000 CFGMGR32.dll                      10.0.22621.2506     C:\WINDOWS\SYSTEM32
+6c7c0000 winspool.drv                      10.0.22621.3810     C:\WINDOWS\SYSTEM32
+6c9a0000 WINMM.dll                         10.0.22621.3672     C:\WINDOWS\System32
+6cbc0000 OLEACC.dll                        7.2.22621.1         C:\WINDOWS\SYSTEM32
+6ccb0000 ntmarta.dll                       10.0.22621.1        C:\WINDOWS\SYSTEM32
+6d3a0000 uxtheme.dll                       10.0.22621.4249     C:\WINDOWS\system32
+6d630000 WINHTTP.dll                       10.0.22621.4249     C:\WINDOWS\SYSTEM32
+6d860000 msimg32.dll                       10.0.22621.2506     C:\WINDOWS\SYSTEM32
+6dc40000 USERENV.dll                       10.0.22621.3527     C:\Windows\System32
+70710000 virtdisk.dll                      10.0.22621.3672     C:\WINDOWS\SYSTEM32
+70730000 PROPSYS.dll                       7.0.22621.4249      C:\WINDOWS\SYSTEM32
+70800000 SspiCli.dll                       10.0.22621.3810     C:\WINDOWS\SYSTEM32
+70830000 iertutil.dll                      11.0.22621.4317     C:\WINDOWS\SYSTEM32
+70a70000 srvcli.dll                        10.0.22621.4249     C:\WINDOWS\SYSTEM32
+70a90000 netutils.dll                      10.0.22621.2506     C:\WINDOWS\SYSTEM32
+70aa0000 urlmon.dll                        11.0.22621.4169     C:\WINDOWS\SYSTEM32
+70c50000 profapi.dll                       10.0.22621.4111     C:\WINDOWS\SYSTEM32
+70c70000 wintypes.dll                      10.0.22621.3810     C:\WINDOWS\SYSTEM32
+70d40000 windows.storage.dll               10.0.22621.4249     C:\WINDOWS\SYSTEM32
+72f00000 CRYPTBASE.DLL                     10.0.22621.1        C:\WINDOWS\SYSTEM32
+74cd0000 version.dll                       10.0.22621.1        C:\WINDOWS\SYSTEM32
+74d70000 capid32.dll                       1.0.0.1010          C:\Program Files (x86)\360\360Safe\safemon
+74da0000 kernel.appcore.dll                10.0.22621.3958     C:\WINDOWS\SYSTEM32
+74dc0000 SafeWrapper32.dll                 2.0.0.1240          C:\Program Files (x86)\360\360Safe\safemon
+74e30000 shell32.dll                       10.0.22621.4249     C:\WINDOWS\System32
+754e0000 sechost.dll                       10.0.22621.4249     C:\WINDOWS\System32
+75570000 win32u.dll                        10.0.22621.4249     C:\WINDOWS\System32
+75590000 CRYPT32.dll                       10.0.22621.4169     C:\WINDOWS\System32
+756a0000 gdi32full.dll                     10.0.22621.4317     C:\WINDOWS\System32
+75790000 ole32.dll                         10.0.22621.3958     C:\WINDOWS\System32
+758f0000 ucrtbase.dll                      10.0.22621.3593     C:\WINDOWS\System32
+75a10000 msvcrt.dll                        7.0.22621.2506      C:\WINDOWS\System32
+75ae0000 KERNELBASE.dll                    10.0.22621.4317     C:\WINDOWS\System32
+75d70000 shcore.dll                        10.0.22621.4249     C:\WINDOWS\System32
+75e40000 advapi32.dll                      10.0.22621.4317     C:\WINDOWS\System32
+75f20000 clbcatq.dll                       2001.12.10941.16384 C:\WINDOWS\System32
+75fb0000 KERNEL32.DLL                      10.0.22621.3958     C:\WINDOWS\System32
+760a0000 comdlg32.dll                      10.0.22621.4249     C:\WINDOWS\System32
+762a0000 MSCTF.dll                         10.0.22621.4317     C:\WINDOWS\System32
+76520000 psapi.dll                         10.0.22621.1        C:\WINDOWS\System32
+76530000 bcrypt.dll                        10.0.22621.2506     C:\WINDOWS\System32
+76550000 bcryptPrimitives.dll              10.0.22621.4317     C:\WINDOWS\System32
+765c0000 GDI32.dll                         10.0.22621.4036     C:\WINDOWS\System32
+765f0000 RPCRT4.dll                        10.0.22621.4249     C:\WINDOWS\System32
+766b0000 SHLWAPI.dll                       10.0.22621.3672     C:\WINDOWS\System32
+76b40000 IMM32.DLL                         10.0.22621.3374     C:\WINDOWS\System32
+76bd0000 combase.dll                       10.0.22621.4249     C:\WINDOWS\System32
+76e50000 msvcp_win.dll                     10.0.22621.3374     C:\WINDOWS\System32
+76ed0000 oleaut32.dll                      10.0.22621.3672     C:\WINDOWS\System32
+76fe0000 user32.dll                        10.0.22621.4317     C:\WINDOWS\System32
+77190000 WS2_32.dll                        10.0.22621.1        C:\WINDOWS\System32
+77200000 ntdll.dll                         10.0.22621.4317     C:\WINDOWS\SYSTEM32
+
+processes:
+0000 Idle                                0 0   0
+0004 System                              0 0   0
+00b8 Registry                            0 0   0
+02f0 smss.exe                            0 0   0
+0324 csrss.exe                           0 0   0
+046c wininit.exe                         0 0   0
+0474 csrss.exe                           1 0   0
+04b4 services.exe                        0 0   0
+04d0 lsass.exe                           0 0   0
+04fc winlogon.exe                        1 0   0
+05b4 svchost.exe                         0 0   0
+05c8 fontdrvhost.exe                     0 0   0
+05d0 fontdrvhost.exe                     1 0   0
+0634 svchost.exe                         0 0   0
+066c svchost.exe                         0 0   0
+06c0 dwm.exe                             1 0   0
+0754 svchost.exe                         0 0   0
+075c svchost.exe                         0 0   0
+0790 svchost.exe                         0 0   0
+0798 svchost.exe                         0 0   0
+07a0 svchost.exe                         0 0   0
+07a8 svchost.exe                         0 0   0
+07fc svchost.exe                         0 0   0
+042c svchost.exe                         0 0   0
+0814 svchost.exe                         0 0   0
+0820 svchost.exe                         0 0   0
+0874 svchost.exe                         0 0   0
+08c4 IntelCpHDCPSvc.exe                  0 0   0
+08e8 svchost.exe                         0 0   0
+08f0 svchost.exe                         0 0   0
+0920 svchost.exe                         0 0   0
+097c IntelCpHeciSvc.exe                  0 0   0
+09e8 svchost.exe                         0 0   0
+0a34 svchost.exe                         0 0   0
+0a4c svchost.exe                         0 0   0
+0aa4 svchost.exe                         0 0   0
+0b14 svchost.exe                         0 0   0
+0b38 igfxCUIService.exe                  0 0   0
+0bd4 svchost.exe                         0 0   0
+0bdc svchost.exe                         0 0   0
+0be4 svchost.exe                         0 0   0
+0c48 svchost.exe                         0 0   0
+0c98 svchost.exe                         0 0   0
+0ca0 svchost.exe                         0 0   0
+0cc4 svchost.exe                         0 0   0
+0cf0 Memory Compression                  0 0   0
+0d18 svchost.exe                         0 0   0
+0dac WUDFHost.exe                        0 0   0
+0df8 svchost.exe                         0 0   0
+0e1c svchost.exe                         0 0   0
+0e64 WUDFHost.exe                        0 0   0
+0ee4 svchost.exe                         0 0   0
+0f00 svchost.exe                         0 0   0
+0f58 svchost.exe                         0 0   0
+0f60 svchost.exe                         0 0   0
+0fb8 svchost.exe                         0 0   0
+0fdc svchost.exe                         0 0   0
+0ff8 svchost.exe                         0 0   0
+0cc0 dasHost.exe                         0 0   0
+1080 svchost.exe                         0 0   0
+10d0 audiodg.exe                         0 0   0
+10e0 svchost.exe                         0 0   0
+1194 svchost.exe                         0 0   0
+11b8 svchost.exe                         0 0   0
+1220 svchost.exe                         0 0   0
+122c svchost.exe                         0 0   0
+1274 svchost.exe                         0 0   0
+128c spoolsv.exe                         0 0   0
+1300 svchost.exe                         0 0   0
+1360 Listary.Service.exe                 0 0   0
+13bc wlanext.exe                         0 0   0
+13c4 conhost.exe                         0 0   0
+1034 svchost.exe                         0 0   0
+1408 WmiPrvSE.exe                        0 0   0
+1440 svchost.exe                         0 0   0
+1574 svchost.exe                         0 0   0
+1600 svchost.exe                         0 0   0
+16a0 ChsIME.exe                          1 0   0
+1718 svchost.exe                         0 0   0
+1720 svchost.exe                         0 0   0
+164c svchost.exe                         0 0   0
+1804 svchost.exe                         0 0   0
+180c svchost.exe                         0 0   0
+1814 mDNSResponder.exe                   0 0   0
+1824 svchostc.exe                        0 0   0
+182c svchost.exe                         0 0   0
+1834 svchost.exe                         0 0   0
+183c svchost.exe                         0 0   0
+1844 micont_service.exe                  0 0   0
+184c MiService.exe                       0 0   0
+185c jhi_service.exe                     0 0   0
+1864 svchost.exe                         0 0   0
+186c DistributedService.exe              0 0   0
+1880 SafetyLoginControlServer.exe        0 0   0
+18b0 handoff_svc.exe                     0 0   0
+18c4 BtwRSupportService.exe              0 0   0
+18d4 OneApp.IGCC.WinService.exe          0 0   0
+18dc vsvnhttpsvc.exe                     0 0   0
+18e4 MiPlayCastService.exe               0 0   0
+18ec WavesSysSvc64.exe                   0 0   0
+198c svchostp.exe                        0 0   0
+19a8 RtkAudUService64.exe                0 0   0
+19b4 WMIRegistrationService.exe          0 0   0
+19c0 usbclerk.exe                        0 0   0
+19e0 UWS_Service.exe                     0 0   0
+19e8 MAFSvr.exe                          0 0   0
+1a44 RstMwService.exe                    0 0   0
+1a74 OfficeClickToRun.exe                0 0   0
+1b28 nfsclnt.exe                         0 0   0
+1cf8 MSPCManagerService.exe              0 0   0
+1d20 vsvnhttpsvc.exe                     0 0   0
+1da4 svchost.exe                         0 0   0
+2238 AggregatorHost.exe                  0 0   0
+15d8 svchost.exe                         0 0   0
+2184 svchost.exe                         0 0   0
+0770 svchost.exe                         0 0   0
+2518 svchost.exe                         0 0   0
+2628 sihost.exe                          1 0   14  normal       C:\Windows\System32
+2648 svchost.exe                         1 0   1   normal       C:\Windows\System32
+2680 svchost.exe                         1 0   1   normal       C:\Windows\System32
+26c0 svchost.exe                         1 0   10  normal       C:\Windows\System32
+26e8 svchost.exe                         0 0   0
+2750 LittleBigMouse.Ui.Avalonia.exe      1 44  23  below normal D:\Program Files\LittleBigMouse
+275c PixPin.exe                          1 14  24  above normal D:\Program Files\PixPin
+27a8 taskhostw.exe                       1 8   6   normal       C:\Windows\System32
+24c0 svchost.exe                         0 0   0
+2910 crashpad_handler.exe                1 0   4   normal       D:\Program Files\PixPin\crashpad
+2964 WmiPrvSE.exe                        0 0   0
+29b4 PresentationFontCache.exe           0 0   0
+29d0 explorer.exe                        1 375 426 normal       C:\Windows
+2a04 igfxEM.exe                          1 10  14  normal       C:\Windows\System32\DriverStore\FileRepository\cui_dch.inf_amd64_bd81469b51147524
+2b04 TrafficMonitor.exe                  1 143 56  below normal D:\Program Files (x86)\TrafficMonitor
+2b0c PowerToys.exe                       1 13  9   normal       D:\Program Files\PowerToys
+2b7c svchost.exe                         1 0   12  normal       C:\Windows\System32
+2bb0 svchost.exe                         0 0   0
+21a4 svchost.exe                         0 0   0
+2b5c SearchHost.exe                      1 95  123 normal       C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+2b00 StartMenuExperienceHost.exe         1 8   40  normal       C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy
+2a70 Widgets.exe                         1 0   7   normal       C:\Program Files\WindowsApps\MicrosoftWindows.Client.WebExperience_524.24900.130.0_x64__cw5n1h2txyewy\Dashboard
+2c24 RuntimeBroker.exe                   1 40  12  normal       C:\Windows\System32
+2c78 RuntimeBroker.exe                   1 0   9   normal       C:\Windows\System32
+2cf0 TSVNCache.exe                       1 0   4   normal       D:\Program Files\TortoiseSVN\bin
+2d50 WidgetService.exe                   1 0   6   normal       C:\Program Files\WindowsApps\Microsoft.WidgetsPlatformRuntime_1.4.0.0_x64__8wekyb3d8bbwe\WidgetService
+2dc4 svchost.exe                         1 0   1   normal       C:\Windows\System32
+2f6c RtkAudUService64.exe                1 0   0
+2e38 dllhost.exe                         1 0   3   normal       C:\Windows\System32
+2e98 svchost.exe                         0 0   0
+30c4 svchost.exe                         0 0   0
+30cc ctfmon.exe                          1 2   26  high         C:\Windows\System32
+31cc SearchIndexer.exe                   0 0   0
+324c ChsIME.exe                          1 0   5   normal       C:\Windows\System32\InputMethod\CHS
+32a4 SGTool.exe                          1 0   11  normal       D:\Program Files (x86)\SogouInput\14.9.0.9966
+32b4 PowerToys.AdvancedPaste.exe         1 0   8   normal       D:\Program Files\PowerToys\WinUI3Apps
+33b8 LittleBigMouse.Hook.exe             1 0   6   normal       D:\Program Files\LittleBigMouse
+1128 TextInputHost.exe                   1 20  137 high         C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+32bc v2rayN.exe                          1 131 62  below normal D:\Program Files\v2rayN-Core
+32b0 PowerToys.ColorPickerUI.exe         1 115 63  normal       D:\Program Files\PowerToys
+162c PowerToys.CropAndLock.exe           1 0   5   normal       D:\Program Files\PowerToys
+3374 unsecapp.exe                        1 0   0
+3410 PowerToys.KeyboardManagerEngine.exe 1 0   1   realtime     D:\Program Files\PowerToys\KeyboardManagerEngine
+343c smartscreen.exe                     1 0   1   normal       C:\Windows\System32
+3464 PowerToys.Peek.UI.exe               1 0   7   normal       D:\Program Files\PowerToys\WinUI3Apps
+3470 svchost.exe                         0 0   0
+34e0 svchost.exe                         0 0   0
+35a4 PowerToys.PowerOCR.exe              1 0   6   normal       D:\Program Files\PowerToys
+3674 wv2ray.exe                          1 0   0   below normal D:\Program Files\v2rayN-Core\bin\v2fly
+36c8 svchosts.exe                        1 23  9   normal       C:\Windows\svchostc\feature\bin
+0e54 Feishu.exe                          1 108 102 normal       D:\Program Files\Feishu\app
+0ae0 Feishu.exe                          1 0   12  normal       D:\Program Files\Feishu\app
+0e00 Feishu.exe                          1 5   14  above normal D:\Program Files\Feishu\app
+19f0 Feishu.exe                          1 0   0   normal       D:\Program Files\Feishu\app
+10f4 Feishu.exe                          1 0   15  normal       D:\Program Files\Feishu\app
+3a50 Feishu.exe                          1 0   0   idle         D:\Program Files\Feishu\app
+3a58 Feishu.exe                          1 0   0   idle         D:\Program Files\Feishu\app
+3b78 Listary.exe                         1 101 77  normal       C:\Program Files\Listary
+08a8 Totalcmd64.exe                      1 675 412 normal       D:\Program Files\TotalCMD64
+3c1c listary-core.exe                    1 0   1   normal       C:\Program Files\Listary
+3c9c conhost.exe                         1 0   1   normal       C:\Windows\System32
+3d00 ListaryHookHost32.exe               1 0   6   normal       C:\Program Files\Listary
+3d44 ListaryHookHost64.exe               1 0   10  normal       C:\Program Files\Listary
+3ef4 TGitCache.exe                       1 0   7   normal       D:\Program Files\TortoiseGit\bin
+3ff0 svchost.exe                         0 0   0
+3dfc svchost.exe                         0 0   0
+3814 AutoHotkey.exe                      1 19  17  normal       D:\Program Files\AutoHotkey
+35c4 AutoHotkey.exe                      1 13  15  normal       D:\Program Files\AutoHotkey
+3b40 AutoHotkey.exe                      1 15  19  normal       D:\Program Files\AutoHotkey
+3d14 hfs.exe                             1 253 145 normal       F:\Sync\Tools\hfs
+3e10 WGestures.exe                       1 37  35  high         C:\Program Files\WGestures 2
+099c WmiPrvSE.exe                        0 0   0
+1d5c svchost.exe                         0 0   0
+3a10 taskhostw.exe                       1 0   2   normal       C:\Windows\System32
+0b54 WhatsApp.exe                        1 0   8   normal       C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_2.2440.9.0_x64__cv1g1gvanyjgm
+11e4 RuntimeBroker.exe                   1 0   5   normal       C:\Windows\System32
+1204 svchost.exe                         0 0   0
+3e9c SogouImeBroker.exe                  1 0   2   normal       C:\Windows\SysWOW64\IME\SogouPY
+3cc4 WeChat.exe                          1 196 116 normal       D:\Program Files\Tencent\WeChat
+2874 mmcrashpad_handler64.exe            1 0   4   normal       D:\Program Files\Tencent\WeChat\[3.9.12.17]
+2d04 svchost.exe                         0 0   0
+3b30 WeChatAppEx.exe                     1 102 95  normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+0480 WeChatAppEx.exe                     1 0   4   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+06e8 WeChatAppEx.exe                     1 0   1   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+363c WeChatAppEx.exe                     1 14  14  above normal C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+09f0 sppsvc.exe                          0 0   0
+3c74 svchost.exe                         0 0   0
+3afc MoUsoCoreWorker.exe                 0 0   0
+0138 vsvnjobsvc.exe                      0 0   0
+2f7c svchost.exe                         0 0   0
+37c0 svchost.exe                         1 0   1   normal       C:\Windows\System32
+1730 ShellExperienceHost.exe             1 7   41  normal       C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy
+3370 RuntimeBroker.exe                   1 0   8   normal       C:\Windows\System32
+1234 svchost.exe                         1 0   3   normal       C:\Windows\System32
+2b88 SystemSettingsBroker.exe            1 0   10  normal       C:\Windows\System32
+4018 svchost.exe                         1 0   1   normal       C:\Windows\System32
+402c WeChatPlayer.exe                    1 0   1   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\ThumbPlayer\4073\extracted
+410c WeChatUtility.exe                   1 0   1   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\WeChatUtility\8091\extracted
+41b4 WeChatOCR.exe                       1 0   1   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\WeChatOCR\7079\extracted
+42b8 WeChatAppEx.exe                     1 0   0   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+42ec WeChatAppEx.exe                     1 0   1   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+43a4 WeChatAppEx.exe                     1 0   0   idle         C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+406c WeChatAppEx.exe                     1 0   0   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+4378 SearchProtocolHost.exe              0 0   0
+4418 WeChatAppEx.exe                     1 0   0   idle         C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+4468 SearchFilterHost.exe                0 0   0
+463c WeChatAppEx.exe                     1 0   0   normal       C:\Users\YOUNG\AppData\Roaming\Tencent\WeChat\XPlugin\Plugins\RadiumWMPF\11275\extracted\runtime
+47d4 mmc.exe                             1 253 116 normal       C:\Windows\System32
+37f8 notepadfree.exe                     1 991 433 normal       D:\Program Files\NotepadFree
+1920 WMIADAP.exe                         0 0   0
+4658 SystemSettings.exe                  1 18  56  normal       C:\Windows\ImmersiveControlPanel
+41c4 ApplicationFrameHost.exe            1 20  23  normal       C:\Windows\System32
+0838 MacTray.exe                         1 189 179 normal       D:\Program Files (x86)\MacType
+4590 mt64agnt.exe                        1 7   5   normal       D:\Program Files (x86)\MacType
+12ac OfficeC2RClient.exe                 0 0   0
+3558 svchost.exe                         0 0   0
+
+hardware:
++ {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+  - OneNote (Desktop)
+  - PDF-XChange Lite
+  - 根打印队列
++ {36fc9e60-c465-11cf-8056-444553540000}
+  - Intel(R) USB 3.0 可扩展主机控制器 - 1.0 (Microsoft)
+  - LIGHTSPEED Receiver (driver 1.1.55.3120)
+  - rjusbp VHCI (driver 0.1.1.6)
+  - rjusbp VHUB (driver 0.1.1.6)
+  - USB Composite Device
+  - USB Composite Device
+  - USB 大容量存储设备
+  - USB 根集线器(USB 3.0)
+  - 通用 USB 集线器
++ {4d36e965-e325-11ce-bfc1-08002be10318}
+  - Realtek USB CD-ROM USB Device
++ {4d36e966-e325-11ce-bfc1-08002be10318}
+  - Dell Inc. OptiPlex 3080
+  - 基于 ACPI x64 的电脑
++ {4d36e967-e325-11ce-bfc1-08002be10318}
+  - PLEXTOR PX-1TM8VC +
+  - ST1000DM010-2EP102
++ {4d36e968-e325-11ce-bfc1-08002be10318}
+  - Intel(R) UHD Graphics 630 (driver 31.0.101.2114)
++ {4d36e96a-e325-11ce-bfc1-08002be10318}
+  - Intel(R) 400 Series Chipset Family SATA AHCI Controller (driver 18.37.1.1003)
++ {4d36e96b-e325-11ce-bfc1-08002be10318}
+  - HID Keyboard Device
+  - HID Keyboard Device
+  - HID Keyboard Device
+  - HID Keyboard Device
++ {4d36e96c-e325-11ce-bfc1-08002be10318}
+  - FlipBuds Pro
+  - FlipBuds Pro Hands-Free
+  - luantu's 🎧
+  - luantu's 🎧 Hands-Free
+  - Realtek(R) Audio (driver 6.0.9486.1)
+  - Ruijie Remote Audio (driver 18.56.59.525)
+  - 千里耳👂🏼
+  - 千里耳👂🏼 Hands-Free
+  - 英特尔(R) 显示器音频 (driver 10.27.0.12)
++ {4d36e96e-e325-11ce-bfc1-08002be10318}
+  - Generic Monitor (Redmi 27 NU)
+  - Generic Monitor (RG-CPM2380-G2)
++ {4d36e96f-e325-11ce-bfc1-08002be10318}
+  - HID-compliant mouse
+  - HID-compliant mouse
+  - HID-compliant mouse
++ {4d36e972-e325-11ce-bfc1-08002be10318}
+  - Bluetooth Device (Personal Area Network) #11
+  - Intel(R) Wi-Fi 6E AX210 160MHz (driver 23.60.1.2)
+  - Microsoft Kernel Debug Network Adapter
+  - Microsoft Wi-Fi Direct Virtual Adapter
+  - Microsoft Wi-Fi Direct Virtual Adapter #2
+  - Realtek PCIe GbE Family Controller (driver 10.57.330.2022)
+  - RuiJie SSLVPN Virtual Network Card (driver 6.3.421.0)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (IPv6)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPPOE)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
++ {4d36e97b-e325-11ce-bfc1-08002be10318}
+  - Microsoft 存储空间控制器
++ {4d36e97d-e325-11ce-bfc1-08002be10318}
+  - ACPI 固定功能按钮
+  - ACPI 处理器聚合器
+  - ACPI 热区域
+  - ACPI 电源按钮
+  - ACPI 睡眠按钮
+  - ACPI 风扇
+  - ACPI 风扇
+  - ACPI 风扇
+  - ACPI 风扇
+  - ACPI 风扇
+  - FlipBuds Pro Hands-Free AG
+  - High Definition Audio 控制器
+  - Intel(R) Gaussian Mixture Model - 1911 (driver 10.1.7.3)
+  - Intel(R) Host Bridge/DRAM Registers - 9B53 (driver 10.1.30.4)
+  - Intel(R) LPC Controller (B460) - A3C8 (driver 10.1.33.3)
+  - Intel(R) Management Engine Interface #1 (driver 2406.5.5.0)
+  - Intel(R) PCI Express Root Port #5 - A394 (driver 10.1.33.3)
+  - Intel(R) PMC - A3A1 (driver 10.1.33.3)
+  - Intel(R) Power Engine Plug-in
+  - Intel(R) Serial IO GPIO Host Controller - INT3451 (driver 30.100.1816.3)
+  - Intel(R) SMBus - A3A3 (driver 10.1.33.3)
+  - Intel(R) Thermal Subsystem - A3B1 (driver 10.1.33.3)
+  - Intel(R) Watchdog Timer Driver (Intel(R) WDT) (driver 11.7.0.1000)
+  - Intel(R) Xeon(R) E3 - 1200/1500 v5/6th Gen Intel(R) Core(TM) PCIe Controller (x16) - 1901 (driver 10.1.1.44)
+  - luantu's 🎧 Hands-Free AG
+  - Microsoft ACPI-Compliant System
+  - Microsoft Hyper-V 虚拟化基础结构驱动程序
+  - Microsoft System Management BIOS Driver
+  - Microsoft UEFI 兼容系统
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft 基本呈现驱动程序
+  - Microsoft 基本显示驱动程序
+  - Microsoft 虚拟驱动器枚举器
+  - NDIS 虚拟网络适配器枚举器
+  - PCI Express 根复合体
+  - Remote Desktop USB Hub
+  - rjusbp VHCI Root (driver 0.1.1.6)
+  - UMBus Enumerator
+  - UMBus Enumerator
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - 千里耳👂🏼 Hands-Free AG
+  - 即插即用软件设备枚举器
+  - 卷管理器
+  - 可编程中断控制器
+  - 复合总线枚举器
+  - 数值数据处理器
+  - 母板资源
+  - 母板资源
+  - 母板资源
+  - 母板资源
+  - 母板资源
+  - 母板资源
+  - 母板资源
+  - 母板资源
+  - 系统 CMOS/实时时钟
+  - 系统计时器
+  - 远程桌面相机总线
+  - 远程桌面设备重定向程序总线
+  - 锐捷远程桌面总线 (driver 10.0.0.1)
+  - 高精度事件计时器
++ {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
+  - Intel(R) Core(TM) i5-10505 CPU @ 3.20GHz
++ {533c5b84-ec70-11d2-9505-00c04f79deaf}
+  - 通用卷影复制
+  - 通用卷影复制
+  - 通用卷影复制
+  - 通用卷影复制
++ {5c4c3332-344d-483c-8739-259e934c9cc8}
+  - Intel(R) Dynamic Application Loader Host Interface (driver 1.44.2023.710)
+  - Intel(R) Graphics Command Center (driver 31.0.101.2114)
+  - Intel(R) Graphics Control Panel (driver 31.0.101.2114)
+  - Intel(R) iCLS Client (driver 1.72.189.0)
+  - Intel(R) Management Engine WMI Provider (driver 2408.5.4.0)
+  - Intel(R) Optane(TM) Memory and Storage Management Component (driver 18.7.6.1010)
+  - Realtek Asio Component (driver 1.0.0.9)
+  - Realtek Audio Effects Component (driver 11.0.6000.1096)
+  - Realtek Audio Universal Service (driver 1.0.598.0)
+  - Waves Audio Effects Component (driver 6.2.0.1865)
++ {62f9c741-b25a-46ce-b54c-9bccce08b6f2}
+  - Microsoft Device Association Root Enumerator
+  - Microsoft GS 波表合成器
+  - Microsoft Radio Device Enumeration Bus
+  - Microsoft RRAS Root Enumerator
+  - WLAN 3
+  - Xiaomi Bus Enumerator (driver 1.0.0.3)
+  - 蓝牙
++ {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+  - Bluetooth Low Energy GATT compliant HID device (driver 10.0.15063.0)
+  - HID-compliant device
+  - USB 输入设备
+  - USB 输入设备
+  - USB 输入设备
+  - USB 输入设备
+  - USB 输入设备
+  - USB 输入设备
+  - USB 输入设备
+  - USB 输入设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的供应商定义设备
+  - 符合 HID 标准的用户控制设备
+  - 符合 HID 标准的用户控制设备
+  - 符合 HID 标准的用户控制设备
+  - 符合 HID 标准的系统控制器
+  - 符合 HID 标准的系统控制器
+  - 符合 HID 标准的系统控制器
+  - 符合蓝牙低能耗 GATT 的 HID 设备
+  - 蓝牙 HID 设备
++ {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}
+  - 主显示器 (英特尔(R) 显示器音频)
+  - 从显示器 (英特尔(R) 显示器音频)
+  - 耳机 (千里耳👂🏼)
++ {d94ee5d8-d189-4994-83d2-f68d7d41b0e6}
+  - 受信任的平台模块 2.0
++ {e0cbf06c-cd8b-4647-bb8a-263b43f0f974}
+  - Basilisk X HyperSpeed
+  - Bluetooth Device (RFCOMM Protocol TDI)
+  - FlipBuds Pro
+  - FlipBuds Pro Avrcp 传输
+  - FlipBuds Pro Avrcp 传输
+  - Generic Bluetooth Adapter
+  - Hola98 Pro
+  - luantu's 🎧
+  - luantu's 🎧 Avrcp 传输
+  - luantu's 🎧 Avrcp 传输
+  - Microsoft 蓝牙 LE 枚举器
+  - Microsoft 蓝牙枚举器
+  - 千里耳👂🏼
+  - 千里耳👂🏼 Avrcp 传输
+  - 千里耳👂🏼 Avrcp 传输
+  - 蓝牙 LE 通用属性服务
+  - 蓝牙 LE 通用属性服务
+  - 蓝牙 LE 通用属性服务
+  - 蓝牙 LE 通用属性服务
+  - 设备信息服务
+  - 设备信息服务
+  - 设备标识服务
+  - 通用属性配置文件
+  - 通用访问配置文件
+  - 通用访问配置文件
++ {e1c7dabe-63de-4630-a4de-a4adc0503be3}
+  - DellInstrumentation Device (driver 2.8.5.0)
++ {f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+  - System Firmware 2.20.0 (driver 0.2.20.0)
+  - 设备固件
+
+cpu registers:
+eax = 00000000
+ebx = 02795db0
+ecx = 02795db4
+edx = ffffffff
+esi = 02748f90
+edi = 00478908
+eip = 00000000
+esp = 09baff00
+ebp = 09baff18
+
+stack dump:
+09baff00  04 07 61 00 20 ff ba 09 - 24 67 40 00 18 ff ba 09  ..a. ...$g@.....
+09baff10  38 ff ba 09 00 00 00 00 - 2c ff ba 09 4e 70 40 00  8.......,...Np@.
+09baff20  4c ff ba 09 f4 69 40 00 - 2c ff ba 09 3c ff ba 09  L....i@.,...<...
+09baff30  d7 88 47 00 90 8f 74 02 - 24 70 40 00 74 ff ba 09  ..G...t.$p@.t...
+09baff40  44 89 47 00 24 70 40 00 - 90 8f 74 02 58 ff ba 09  D.G.$p@...t.X...
+09baff50  51 89 47 00 74 ff ba 09 - cc ff ba 09 b5 89 47 00  Q.G.t.........G.
+09baff60  74 ff ba 09 08 89 47 00 - 08 89 47 00 d0 8f 74 02  t.....G...G...t.
+09baff70  08 89 47 00 84 ff ba 09 - a9 7b fc 75 d0 8f 74 02  ..G......{.u..t.
+09baff80  90 7b fc 75 dc ff ba 09 - cb c0 26 77 d0 8f 74 02  .{.u......&w..t.
+09baff90  c7 63 69 86 00 00 00 00 - 00 00 00 00 d0 8f 74 02  .ci...........t.
+09baffa0  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+09baffb0  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+09baffc0  00 00 00 00 90 ff ba 09 - 00 00 00 00 e4 ff ba 09  ................
+09baffd0  00 f3 27 77 43 d7 e2 f8 - 00 00 00 00 ec ff ba 09  ..'wC...........
+09baffe0  4f c0 26 77 ff ff ff ff - 32 9f 29 77 00 00 00 00  O.&w....2.)w....
+09bafff0  00 00 00 00 08 89 47 00 - d0 8f 74 02 00 00 00 00  ......G...t.....
+
+disassembling:
+[...]
+006106ed        sub     edx, -$c
+006106f0        xor     eax, eax
+006106f2        call    -$150b8b ($4bfb6c)     ; Classes.TThread.Synchronize
+006106f7 2957   mov     eax, [$634aec]
+006106fc        add     eax, [$62d570]
+00610702      > call    eax
+00610704 2960   xor     eax, eax
+00610706        pop     edx
+00610707        pop     ecx
+00610708        pop     ecx
+00610709        mov     fs:[eax], edx
+[...]
+
